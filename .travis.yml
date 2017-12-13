@@ -1,1 +1,8 @@
 language: cpp
+compiler:
+    - clang
+    - gcc
+scripts:
+    - $(CXX) main.cpp -o cpp_ci_test.o
+    - ./cpp_ci_test.o
+
